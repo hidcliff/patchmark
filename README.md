@@ -1,4 +1,4 @@
-patchmark.js
+patchmark
 ============
 
 A JavaScript Markdown Parser.
