@@ -1,0 +1,27 @@
+{
+  "name": "patchmark",
+  "version": "0.1.0",
+  "homepage": "https://github.com/hidcliff/patchmark.js",
+  "authors": [
+    "hidcliff@gmail.com"
+  ],
+  "description": "A JavaScript markdown parser",
+  "main": "dist/patchmark.js",
+  "keywords": [
+    "javascript",
+    "markdown"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "*.md",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.1"
+  }
+}

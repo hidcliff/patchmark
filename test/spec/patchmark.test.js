@@ -1,6 +1,4 @@
-/**
- * patchmark Testcase
- */
+/* global describe, it, expect, patchmark */
 
 (function() {
 	'use strict';
@@ -78,7 +76,7 @@
 					'<p>This is the first paragraph of this blockquote.</p>',
 					'<p>This is the second paragraph of this blockquote.</p>',
 					'</blockquote>'
-				]).join('\n')
+				]).join('\n');
 				expect(patchmark.parse(input)).to.equal(output);
 
 				input = ([
@@ -365,7 +363,7 @@
 				output = '<ul>\n<li>list1</li>\n<li>list2</li>\n</ul>';
 				expect(patchmark.parse(input)).to.equal(output);
 
-				input = '- list1\n    1. sublist1\n    2. sublist2\n- list2'
+				input = '- list1\n    1. sublist1\n    2. sublist2\n- list2';
 				output = '<ul>\n<li>list1\n<ol>\n<li>sublist1</li>\n<li>sublist2</li>\n</ol></li>\n<li>list2</li>\n</ul>';
 				expect(patchmark.parse(input)).to.equal(output);
 			});
@@ -439,7 +437,7 @@
 
 
 
-				var code = 'function() {\n    var sum=0;\n    for() {\n        sum = sum + 1;\n    }\n    return sum;\n}'
+				var code = 'function() {\n    var sum=0;\n    for() {\n        sum = sum + 1;\n    }\n    return sum;\n}';
 				input = '    ' + code.replace(/\n/g, '\n    ');
 				output = '<pre><code>' + code + '\n</code></pre>';
 				expect(patchmark.parse(input)).to.equal(output);
